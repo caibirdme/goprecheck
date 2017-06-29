@@ -1,0 +1,12 @@
+show = true
+goroutines = 5
+[[checkers]]
+    command="gosimple"
+    args = ["-tests=false"]
+[[checkers]]
+    command = "unused"
+    args = ["-tests=false"]
+[[checkers]]
+    command =  "golint"
+    args = ["-set_exit_status"]
+    onePackage = true
